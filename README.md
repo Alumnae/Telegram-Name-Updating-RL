@@ -1,32 +1,30 @@
-# Telegram-Name-Updating
+# Telegram-Name-Updating with Roman Latin Time
 
 Update (first/last/user) name of Telegram user every 30 seconds. 
 
-参考文档：<a href="https://telethon.readthedocs.io/en/stable/">Telethon</a>
+ex: 9:20 will be IV:XX
 
-lastname实时更新效果：<a href="https://t.me/CodyDoby">Cody</a>
+Reference：<a href="https://telethon.readthedocs.io/en/stable/">Telethon</a>
 
-## 0. 准备
+## 0. Preparation
 
 运行环境：VPS，python3，python3-pip
 
-创建应用：<a href="https://my.telegram.org/">https://my.telegram.org/</a>。只要填App title和Short name即可。获得api_id和api_hash。
+Apply for Telegram API：<a href="https://my.telegram.org/">https://my.telegram.org/</a>。Complete registration with"App title" and "Short name". You got "api_id" and "api_hash".
 
-## 1. 下载Demo小程序到VPS上
+## 1. Clone to VPS
 
-<code>git clone https://github.com/xyou365/Telegram-Name-Updating.git</code>\
-<code>cd Telegram-Name-Updating</code>
+<code>git clone https://github.com/Alumnae/Telegram-Name-Updating-RL.git</code>\
+<code>cd Telegram-Name-Updating-RL</code>
 
-## 2. 安装telethon
+## 2. Install telethon
 
 <code>pip3 install -r requirements.txt</code>
 
-## 3. 运行Demo小程序
+## 3. Execute in Background
 
-<code>python3 tg_username_update.py</code>
+<code>python3 tg_username_update-RL.py</code>
 
-## 4. api认证和用户登陆
+## 4. Telegram api Login
 
-根据提示输入api_id和api_hash。接着输入手机号和验证码，如果账号开启了二次验，证根据提示再输入二次验证的密码。最后看到 It works! 表明成功了。 默认的是每30秒钟按照一定概率更新一次lastname到特定模式。
-
-欢迎<a href="https://www.gfan.loan/?page_id=281/">加入我们</a>（备用：<a href="https://t.me/joinchat/AAAAAEt8nhUy2w8R_ikizQ">Telegram群组</a>）。
+Enter the API_ID and API_HASH as prompted. Then, input your phone number and verification code. If two-factor authentication is enabled on the account, follow the prompts to enter the two-factor authentication password. Finally, if you see “It works!”, it indicates success. By default, the lastname is updated to a specific pattern every 30 seconds based on a certain probability.
